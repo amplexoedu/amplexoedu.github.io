@@ -1,12 +1,27 @@
 
 
+h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
 body {
   background-color: red;
   color: white;
   padding: 20px;
 }
 
+ul {
+  font-size: 18px;
+}
+
 a {
     color: white;
 }
 
+footer {
+  text-align: center;
+  color: white;
+  padding-top: 300px;
+}
