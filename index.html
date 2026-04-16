@@ -1,30 +1,94 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Amplexo Educação — clubes, olimpíadas e cursos avançados. Recursos e competições para estudantes ambiciosos.">
+  <meta property="og:title" content="Amplexo Educação">
+  <meta property="og:description" content="Clubes, olimpíadas e recursos educacionais premium.">
+  <meta property="og:type" content="website">
   <link rel="icon" type="image/x-icon" href="./imgs/faviconamplexo.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#050814">
+  <link rel="apple-touch-icon" href="./imgs/logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Amplexo Educação</title>
+  <title>Amplexo Educação — Clube & Olimpíadas</title>
 </head>
 <body>
-  <h1>Clube Amplexo Educação</h1>
-  <!--website feito pelo Tio Vené-->
-  
-  <ul>
-    <li><h4><a href="https://www.youtube.com/playlist?list=PL0O2_68M0dtdc5uNmRZUgVCUtDue0A2Le"><b>Escola Azul.</b></a></h4></li>
-    <li><h4><a href="https://www.youtube.com/playlist?list=PL0O2_68M0dtevTF9EySLutGAbffry0l70"><b>ICO (International Computing Olympiad) 2025.</b></a></h4></li>
-    <li><h4><a href="https://www.youtube.com/playlist?list=PL0O2_68M0dtdEw_PmOtYvzO0w-RJ1AtD1"><b>Mathématiques sans frontières 2025.</b></a></h4></li>
-    <li><h4><a href="https://www.youtube.com/watch?v=p5vQJUtfRhg"><b>SMETA (Science Mathematics English Technology Art) Olympiads 2025-1.</b></a></h4></li>
-    <li><h4><a href="https://amplexoedu.com/smeta"><b>SMETA (Science Mathematics English Technology Art) Olympiads 2025-2.</b></a></h4></li>
-    <li><h4><a href="./SIMOC"><b>SIMOC (Singapore International Math Olympiad Challenge).</b></a></h4></li>
-    <li><h4><a href="./BrilliantP"><b>The Brilliant (Quantum) Poetry Competition 2025 - Competição aberta!</b></a></h4></li>
-  </ul>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <div class="page-bg"></div>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#main-content" title="Ir para o início" aria-label="Ir para o início">
+        <img src="./imgs/logo.svg" alt="Amplexo Educação" class="logo" />
+      </a>
+    </div>
+  </header>
 
-  <footer>
-    <h3><b>Amplexo Educação © ® desde 2023.</b></h3>
-    <p><b><a href="https://github.com/amplexoedu">GitHub</a> | <a href="https://www.linkedin.com/company/amplexo-educa%C3%A7%C3%A3o/">LinkedIn</a> | <a href="https://www.instagram.com/amplexoedu">Instagram</a> | <a href="https://www.amplexoedu.com">Amplexoedu.com</a> | <a href="https://www.amplexoeducacao.com">Amplexoeducacao.com</a>
-    </b></p>
+  <main>
+    <section id="main-content" class="hero">
+      <div class="container hero-inner">
+        <h1>Clube Amplexo Educação</h1>
+        <p class="subtitle">Preparando mentes curiosas para competições e aprendizado de alta performance.</p>
+        <p class="ctas"><a class="btn primary" href="#resources">Explorar Recursos</a><a class="btn ghost" href="#contact">Junte-se</a></p>
+      </div>
+    </section>
+
+    <section id="resources" class="cards container">
+      <article class="card">
+        <img class="card-icon" src="./imgs/icon-book.svg" alt="Livro">
+        <h3>Escola Azul</h3>
+        <a class="card-link" href="https://www.youtube.com/playlist?list=PL0O2_68M0dtdc5uNmRZUgVCUtDue0A2Le" target="_blank" rel="noopener noreferrer">Ver playlist →</a>
+      </article>
+
+      <article class="card">
+        <img class="card-icon" src="./imgs/icon-code.svg" alt="Código">
+        <h3>ICO 2025</h3>
+        <a class="card-link" href="https://www.youtube.com/playlist?list=PL0O2_68M0dtevTF9EySLutGAbffry0l70" target="_blank" rel="noopener noreferrer">Ver recursos →</a>
+      </article>
+
+      <article class="card">
+        <img class="card-icon" src="./imgs/icon-math.svg" alt="Matemática">
+        <h3>Mathématiques sans frontières 2025</h3>
+        <a class="card-link" href="https://www.youtube.com/playlist?list=PL0O2_68M0dtdEw_PmOtYvzO0w-RJ1AtD1" target="_blank" rel="noopener noreferrer">Ver →</a>
+      </article>
+
+      <article class="card">
+        <img class="card-icon" src="./imgs/icon-atom.svg" alt="Ciência">
+        <h3>SMETA 2025</h3>
+        <a class="card-link" href="https://www.youtube.com/watch?v=p5vQJUtfRhg" target="_blank" rel="noopener noreferrer">Ver vídeo →</a>
+      </article>
+
+      <article class="card">
+        <img class="card-icon" src="./imgs/icon-trophy.svg" alt="Troféu">
+        <h3>SIMOC</h3>
+        <a class="card-link" href="./SIMOC">Abrir →</a>
+      </article>
+
+      <article class="card">
+        <img class="card-icon" src="./imgs/icon-quill.svg" alt="Pena">
+        <h3>Brilliant Poetry</h3>
+        <p>Competição de poesia criativa com temas científicos e tecnológicos.</p>
+        <a class="card-link" href="./BrilliantP">Participar →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-block">
+        <h4>Amplexo Educação © 2023—2026</h4>
+        <p class="small">Conecte-se conosco:</p>
+        <p class="socials"><a href="https://github.com/amplexoedu" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/company/amplexo-educa%C3%A7%C3%A3o/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://www.instagram.com/amplexoedu" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+      </div>
+      <div class="meta">
+        <p class="small">Transformando curiosidade em excelência — impulsionando talentos para o futuro.</p>
+      </div>
+    </div>
   </footer>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>

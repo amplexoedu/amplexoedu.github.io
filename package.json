@@ -1,0 +1,12 @@
+{
+  "name": "amplexoedu-site-tools",
+  "version": "1.0.0",
+  "description": "Utility scripts for AmplexoEdu site (icon generation)",
+  "private": true,
+  "scripts": {
+    "icons": "node scripts/convert-icons.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.0"
+  }
+}
